@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>나의 첫 로그인 페이지</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f4f4f9;
+        }
+
+        .login-box {
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 40px;
+            width: 300px;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        input {
+            margin-bottom: 15px;
+            padding: 10px;
+            width: 90%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px;
+            width: 100%;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>환영합니다! 👋</h1>
+    </header>
+
+    <main>
+        <div class="login-box">
+            <h2>로그인</h2>
+            <p>서비스를 이용하시려면 로그인해주세요.</p>
+
+            <form action="site.html">
+                <input type="text" placeholder="아이디를 입력하세요">
+                <input type="password" placeholder="비밀번호를 입력하세요">
+                <button type="submit">로그인 하기</button>
+            </form>
+
+            <br>
+            <ul>
+                <li><a href="http://www.google.co.kr">회원가입</a></li>
+                <li><a href="#">비밀번호 찾기</a></li>
+            </ul>
+        </div>
+    </main>
+
+</body>
+
+</html>
