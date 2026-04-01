@@ -1,0 +1,22 @@
+name: Python CI/CD # 워크플로우 이름
+
+on:
+  push:
+    branches: ["master"] # master 브랜치에 코드가 올라올 때 실행
+
+jobs:
+  build:
+    runs-on: ubuntu-latest # 리눅스 서버에서 실행해라
+
+    steps:
+      - uses: actions/checkout@v4 # 1. GitHub 서버가 내 코드를 가져오게 함
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5 # 2. 파이썬 3.12를 설치함
+        with:
+          python-version: "3.12"
+
+      - name: Print Hello World
+        run: | # 3. 테스트 겸 메시지 출력
+          echo "GitHub Actions 실행 성공!"
+          python --version
