@@ -22,4 +22,4 @@ jobs:
       # (2) 내가 직접 명령어를 실행하는 단계
       - name: Run Hello World
         # 리눅스 터미널 명령어로 메시지 출력 (자동화 성공 여부 확인용)
-        run: echo "GitHub Actions 성공하셨다!!!"
+        run: echo "GitHub Actions 성공하였습니다!"
